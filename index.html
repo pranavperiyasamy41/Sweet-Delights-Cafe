@@ -64,7 +64,7 @@
     }
 
     .hero h1 {
-      font-size: 4.5rem;
+      font-size: clamp(3.5rem, 4vw, 5rem);
       font-weight: 800;
       font-family: 'Poppins', sans-serif;
       color: #ffe0b2;
@@ -88,7 +88,7 @@
     }
 
     .section-heading {
-      font-size: 2rem;
+      font-size: 3rem;
       color: #5d4037;
       font-weight: 700;
       font-family: 'poppins';
@@ -223,64 +223,77 @@
 
   <section class="container">
     <h3 class="section-heading" style="color: #ffe0b2; margin-top: 100px;">Popular Items</h3>
-    <div class="row g-4 row-cols-lg-4 row-cols-md-2 row-cols-md-1">
-      <div class="col-6 col-md-3">
-        <div class="product-card">
-          <img src="Cakes/Red Velvet Cake.webp" class="img-fluid mb-2" alt="Red Velvet Cake">
-          Red Velvet Cake<br>Rs.505
-          <button class="btn mt-3 mx-auto d-block" style="width: 70%;">Add to Cart</button>
+    <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+      <div class="col d-flex">
+        <div class="product-card w-100 h-100 d-flex flex-column">
+          <img src="Cakes/Red Velvet Cake.webp" class="img-fluid mb-2" alt="Red Velvet Cake"
+            style="height:200px; object-fit:cover;">
+          <div class="flex-grow-1 d-flex flex-column justify-content-between">
+            <div>
+              Red Velvet Cake<br>Rs.149
+            </div>
+            <button class="btn mt-3 mx-auto d-block" style="width: 70%;">Add to Cart</button>
+          </div>
         </div>
       </div>
-      <div class="col-6 col-md-3">
-        <div class="product-card">
+      <div class="col d-flex">
+        <div class="product-card w-100 h-100 d-flex flex-column">
           <img src="Dessert/Baked Blueberry Cheese Cake Slice.webp" class="img-fluid mb-2"
-            alt="Baked Blueberry Cheese Cake Slice">Blueberry Cheese Cake<br>Rs.505
-          <button class="btn mt-3 mx-auto d-block" style="width: 70%;">Add to Cart</button>
+            alt="Baked Blueberry Cheese Cake Slice" style="height:200px; object-fit:cover;">
+          <div class="flex-grow-1 d-flex flex-column justify-content-between">
+            <div>
+              Blueberry Cake<br>Rs.149
+            </div>
+            <button class="btn mt-3 mx-auto d-block" style="width: 70%;">Add to Cart</button>
+          </div>
         </div>
       </div>
-      <div class="col-6 col-md-3">
-        <div class="product-card">
-          <img src="Doughnuts/Chocolate Doughnut (Pack Of 2).webp" class="img-fluid mb-2" alt="Chocolate Doughnut">
-          Chocolate Doughnut<br>Rs.415
-          <button class="btn mt-3 mx-auto d-block" style="width: 70%;">Add to Cart</button>
+      <div class="col d-flex">
+        <div class="product-card w-100 h-100 d-flex flex-column">
+          <img src="Snacks/Chicken Roll.webp" class="img-fluid mb-2" alt="Baked chicken roll"
+            style="height:200px; object-fit:cover;">
+          <div class="flex-grow-1 d-flex flex-column justify-content-between">
+            <div>
+              Baked chicken roll<br>Rs.30
+            </div>
+            <button class="btn mt-3 mx-auto d-block" style="width: 70%;">Add to Cart</button>
+          </div>
         </div>
       </div>
-      <div class="col-6 col-md-3">
-        <div class="product-card">
-          <img src="Snacks/Chicken Roll.webp" class="img-fluid mb-2" alt="Baked chicken roll">
-          Baked chicken roll<br>Rs.66
-          <button class="btn mt-3 mx-auto d-block" style="width: 70%;">Add to Cart</button>
+    
+      <div class="col d-flex">
+        <div class="product-card w-100 h-100 d-flex flex-column">
+          <img src="Special/Cinnamon Rolls.webp" class="img-fluid mb-2" alt="Cinnamon Rolls"
+            style="height:200px; object-fit:cover;">
+          <div class="flex-grow-1 d-flex flex-column justify-content-between">
+            <div>
+              Cinnamon Rolls<br>Rs.49
+            </div>
+            <button class="btn mt-3 mx-auto d-block" style="width: 70%;">Add to Cart</button>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="row g-4 row-cols-lg-4 row-cols-md-2 row-cols-md-1 mt-3">
-      <div class="col-6 col-md-3">
-        <div class="product-card">
-          <img src="Snacks/Cheese Corn Sandwich.webp" class="img-fluid mb-2" alt="Cheese Corn Sandwich">
-          Cheese Corn Sandwich<br>Rs.118
-          <button class="btn mt-3 mx-auto d-block" style="width: 70%;">Add to Cart</button>
+      <div class="col d-flex">
+        <div class="product-card w-100 h-100 d-flex flex-column">
+          <img src="Images/ff.jpg" class="img-fluid mb-2" alt="Honey Croissant" style="height:200px; object-fit:cover;">
+          <div class="flex-grow-1 d-flex flex-column justify-content-between">
+            <div>
+              Honey Croissant<br>Rs.30
+            </div>
+            <button class="btn mt-3 mx-auto d-block" style="width: 70%;">Add to Cart</button>
+          </div>
         </div>
       </div>
-      <div class="col-6 col-md-3">
-        <div class="product-card">
-          <img src="Special/Cinnamon Rolls.webp" class="img-fluid mb-2" alt="Cinnamon Rolls">
-          Cinnamon Rolls<br>Rs.505
-          <button class="btn mt-3 mx-auto d-block" style="width: 70%;">Add to Cart</button>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="product-card">
-          <img src="Images/ff.jpg" class="img-fluid mb-2" alt="Honey Croissant">
-          Honey Croissant<br>Rs.285
-          <button class="btn mt-3 mx-auto d-block" style="width: 70%;">Add to Cart</button>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="product-card">
-          <img src="Dessert/Choco Balls.webp" class="img-fluid mb-2" alt="Choco Balls">
-          Choco Balls<br>Rs.185
-          <button class="btn mt-3 mx-auto d-block" style="width: 70%;">Add to Cart</button>
+      <div class="col d-flex">
+        <div class="product-card w-100 h-100 d-flex flex-column">
+          <img src="Dessert/Choco Balls.webp" class="img-fluid mb-2" alt="Choco Balls"
+            style="height:200px; object-fit:cover;">
+          <div class="flex-grow-1 d-flex flex-column justify-content-between">
+            <div>
+              Choco Balls<br>Rs.65
+            </div>
+            <button class="btn mt-3 mx-auto d-block" style="width: 70%;">Add to Cart</button>
+          </div>
         </div>
       </div>
     </div>
@@ -290,7 +303,7 @@
   </section>
 
   <section class="container mt-5" style="max-width: 1000px;">
-    <h3 class="section-heading" style="color: #ffe0b2;">Our Environment</h3>
+    <h3 class="section-heading" style="color: #ffe0b2;">Where the Magic Happens</h3>
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
