@@ -211,13 +211,33 @@
     </div>
   </nav>
 
-  <div class="hero">
+  <div class="hero d-flex justify-content-center align-items-center">
     <img src="Images/cake head1.jpg" alt="Chocolate cake background">
-    <div class="position-relative">
-      <h1>Bite into Happiness<br>Savor the Sweetness</h1>
-      <a class="btn" href="#id1">Swipe</a>
+    <div class="position-relative w-100 d-flex flex-column justify-content-center align-items-center" style="min-height: 200px;">
+      <h1 class="w-100 text-center">Bite into Happiness<br>Savor the Sweetness</h1>
+      <a class="btn mt-3" href="#id1">Swipe</a>
     </div>
   </div>
+  <style>
+    @media (max-width: 576px) {
+      .hero {
+        height: 60vh;
+        min-height: 350px;
+        margin-top: 56px;
+      }
+      .hero h1 {
+        font-size: 2rem !important;
+        padding: 0 10px;
+      }
+      .hero .btn {
+        font-size: 1rem;
+        padding: 8px 20px;
+      }
+      .hero .position-relative {
+        min-height: 120px !important;
+      }
+    }
+  </style>
 
   <section id="id1"></section>
 
